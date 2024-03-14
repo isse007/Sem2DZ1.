@@ -1,11 +1,17 @@
 ﻿// Задача 1: Напишите программу, которая принимает на вход число и проверяет, кратно ли оно одновременно 7 и 23.
 
-int n = 46;
-if (n%7 ==0 && n%23==0)
+void FirstDivSecond (int a)
 {
-Console.Write ($"Число {n} кратно одновременно 7 и 23");
+    if (a%7 ==0 && a%23==0)
+    {
+        Console.Write ($"Число {a} кратно одновременно 7 и 23");
+    }
+    else
+    {
+        Console.Write ($"Число {a} некратно одновременно 7 и 23");
+    }
 }
-else
-{
-Console.Write ($"Число {n} некратно одновременно 7 и 23");
-}
+System.Console.WriteLine("Введите число: ");
+int n = Convert.ToInt32 (Console.ReadLine());
+
+FirstDivSecond(n);
